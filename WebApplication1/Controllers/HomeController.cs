@@ -26,5 +26,17 @@ namespace WebApplication1.Controllers
 
             return View();
         }
+
+        public ActionResult SaveRecord(Models.TestViewModel vm)
+        {
+            if (ModelState.IsValid)
+            {
+                return View("Index");
+            }
+            else
+            {
+                return View("Index");
+            }            
+        }
     }
 }
